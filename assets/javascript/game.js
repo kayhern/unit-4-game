@@ -15,3 +15,5 @@
 //when the user loses then the wins go up
 
 //whenever the player wins or loses then the game resets
+
+//link this to the portfolio of the first assignment*******

@@ -1,16 +1,28 @@
 body {
-
+    background-color: lightgray;
 }
 
 h1 {
-
-}
-
-p {
-
+    color: white;
+    background-color: saddlebrown;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 270px;
 }
 
 .peachcontainer {
+    color: green;
+    font-weight: bold;
+    background-color: peachpuff;
+    width: 700px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+p {
+    
 
 }
 
@@ -23,5 +35,5 @@ h2 {
 }
 
 .totalscore {
-    
+
 }
