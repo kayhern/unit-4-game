@@ -11,6 +11,10 @@ randomNumber();
 
 //if the user clicks on consequent crystals a number gets added to score (cumulative)
 
+//baseline for any jQuery function according to this video https://www.youtube.com/watch?v=hMxGhHNOkCU: $(document).ready(function()) {
+
+//} ;
+
 //when the score goes past the random number then the user loses
 
 //when the score is a match to the number generated then the user wins
