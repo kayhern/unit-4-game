@@ -1,12 +1,19 @@
 //random number gets generated (between 19-120) resource: https://www.w3schools.com/jsref/jsref_random.asp
 //article explaining it's not really random: https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131
 //function to generate number:
-function randomNumber () {
-    let number = Math.floor((Math.random() * 101) + 19);
-    console.log(number + " random number");
-    return number;
-}
-randomNumber();
+$(document).ready(function(){
+    function randomNumber () {
+        let number = Math.floor((Math.random() * 101) + 19);
+        console.log(number + " random number");
+        return number;
+    }
+    randomNumber();
+
+
+
+})
+
+
 //getting the random number to show on the screen:
 
 //four crystals get assigned random numbers/scores (between 1-12)
