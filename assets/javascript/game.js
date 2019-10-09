@@ -15,39 +15,54 @@ $(document).ready(function(){
 //four crystals get assigned random numbers/scores (between 1-12)
 $(document).ready(function() {
 //assigning value to crystals using same prinicples as above. Here we make the random number from 1-12:
+let numberb = blueValue();
+let numberg = greenValue();
+let numberr = redValue();
+let numbery = yellowValue();
+
     function blueValue () {
-        let number = Math.floor((Math.random()* 12) + 1);
+        let numberb = Math.floor((Math.random()* 12) + 1);
         console.log(number + " blue value");
-        return number;
+        return numberb;
     }
     blueValue();
 
     function greenValue () {
-        let number = Math.floor((Math.random()* 12) + 1);
+        let numberg = Math.floor((Math.random()* 12) + 1);
         console.log(number + " green value");
-        return number;
+        return numberg;
     }
     greenValue();
 
     function redValue () {
-        let number = Math.floor((Math.random()* 12) + 1);
+        let numberr = Math.floor((Math.random()* 12) + 1);
         console.log(number + " red value");
-        return number;
+        return numberr;
     }
     redValue();
 
     function yellowValue () {
-        let number = Math.floor((Math.random()* 12) + 1);
+        let numbery = Math.floor((Math.random()* 12) + 1);
         console.log(number + " yellow value");
-        return number;
+        return numbery;
     }
     yellowValue();
 
-// we need a trigger to make clicking on each jewel contribute to total score, but making sure that clicking on them doesn't change the number value with every click. The jewel value needs to be static
+//defining value to each jewel using above functions attempting to make jewel value static for one game
+
+let numberb = blueValue();
+let numberg = greenValue();
+let numberr = redValue();
+let numbery = yellowValue();    
+
+    $("img.one", "img.two", "img.three", "img.four").click(function(score){
+// we need a trigger to make clicking on each jewel contribute to total score
+    });
+
+
 
 });
 
-//as the user clicks on each crystal a number gets added to score
 
 //if the user clicks on consequent crystals a number gets added to score (cumulative)
 
