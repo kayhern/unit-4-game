@@ -7,9 +7,10 @@ $(document).ready(function(){
         let number = Math.floor((Math.random() * 101) + 19);
         console.log(number + " random number");
         return number;
+        //getting the random number to show on the screen: 
     }
     randomNumber();
-//getting the random number to show on the screen: 
+
 
 
 
@@ -27,6 +28,8 @@ $(document).ready(function(){
 //baseline for any jQuery function according to this video https://www.youtube.com/watch?v=hMxGhHNOkCU: $(document).ready(function()) {
 
 //} ;
+
+//jQuery to manipulate CSS
 
 //when the score goes past the random number then the user loses
 
