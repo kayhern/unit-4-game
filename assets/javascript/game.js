@@ -15,51 +15,40 @@ $(document).ready(function(){
 //four crystals get assigned random numbers/scores (between 1-12)
 $(document).ready(function() {
 //assigning value to crystals using same prinicples as above. Here we make the random number from 1-12:
-let numberb = blueValue();
-let numberg = greenValue();
-let numberr = redValue();
-let numbery = yellowValue();
 
     function blueValue () {
         let numberb = Math.floor((Math.random()* 12) + 1);
-        console.log(number + " blue value");
+        console.log(numberb + " blue value");
         return numberb;
     }
     blueValue();
 
     function greenValue () {
         let numberg = Math.floor((Math.random()* 12) + 1);
-        console.log(number + " green value");
+        console.log(numberg + " green value");
         return numberg;
     }
     greenValue();
 
     function redValue () {
         let numberr = Math.floor((Math.random()* 12) + 1);
-        console.log(number + " red value");
+        console.log(numberr + " red value");
         return numberr;
     }
     redValue();
 
     function yellowValue () {
         let numbery = Math.floor((Math.random()* 12) + 1);
-        console.log(number + " yellow value");
+        console.log(numbery + " yellow value");
         return numbery;
     }
     yellowValue();
 
-//defining value to each jewel using above functions attempting to make jewel value static for one game
-
-let numberb = blueValue();
-let numberg = greenValue();
-let numberr = redValue();
-let numbery = yellowValue();    
+//defining value to each jewel using above functions attempting to make jewel value static for one game  
 
     $("img.one", "img.two", "img.three", "img.four").click(function(score){
 // we need a trigger to make clicking on each jewel contribute to total score
     });
-
-
 
 });
 
