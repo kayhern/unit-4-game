@@ -1,8 +1,7 @@
-//random number gets generated (between 19-120) resource: https://www.w3schools.com/jsref/jsref_random.asp
+//function to generate 'random' number:
+$(document).ready(function(){  
+//random number gets generated (between 19-120) resource: https://www.w3schools.com/jsref/jsref_random.asp 
 //article explaining it's not really random: https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131
-
-$(document).ready(function(){
-//function to generate 'random' number:   
     function randomNumber () {
         let number = Math.floor((Math.random() * 101) + 19);
         console.log(number + " random number");
@@ -11,16 +10,43 @@ $(document).ready(function(){
     randomNumber(); 
     //getting the random number to show on the screen (the number the player has to match to win the game) resource: https://api.jquery.com/html/
     $("div.randominteger").text(randomNumber());
-})
+});
 
 //four crystals get assigned random numbers/scores (between 1-12)
-
 $(document).ready(function() {
-//assigning value to blue crystal using same prinicples as above:
+//assigning value to crystals using same prinicples as above. Here we make the random number from 1-12:
     function blueValue () {
-        let number = Math.floor((Math.random()))
+        let number = Math.floor((Math.random()* 12) + 1);
+        console.log(number + " blue value");
+        return number;
     }
-}
+    blueValue();
+
+    function greenValue () {
+        let number = Math.floor((Math.random()* 12) + 1);
+        console.log(number + " green value");
+        return number;
+    }
+    greenValue();
+
+    function redValue () {
+        let number = Math.floor((Math.random()* 12) + 1);
+        console.log(number + " red value");
+        return number;
+    }
+    redValue();
+
+    function yellowValue () {
+        let number = Math.floor((Math.random()* 12) + 1);
+        console.log(number + " yellow value");
+        return number;
+    }
+    yellowValue();
+
+// we need a trigger to make clicking on each jewel contribute to total score, but making sure that clicking on them doesn't change the number value with every click. The jewel value needs to be static
+
+});
+
 //as the user clicks on each crystal a number gets added to score
 
 //if the user clicks on consequent crystals a number gets added to score (cumulative)
