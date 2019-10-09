@@ -6,21 +6,21 @@ $(document).ready(function(){
     function randomNumber () {
         let number = Math.floor((Math.random() * 101) + 19);
         console.log(number + " random number");
-        return number;
-        //getting the random number to show on the screen: 
+        return number;  
     }
-    randomNumber();
-
-
-
-
+    randomNumber(); 
+    //getting the random number to show on the screen (the number the player has to match to win the game) resource: https://api.jquery.com/html/
+    $("div.randominteger").text(randomNumber());
 })
-
-
-
 
 //four crystals get assigned random numbers/scores (between 1-12)
 
+$(document).ready(function() {
+//assigning value to blue crystal using same prinicples as above:
+    function blueValue () {
+        let number = Math.floor((Math.random()))
+    }
+}
 //as the user clicks on each crystal a number gets added to score
 
 //if the user clicks on consequent crystals a number gets added to score (cumulative)
@@ -39,6 +39,8 @@ $(document).ready(function(){
 
 //when the user loses then the wins go up
 
-//whenever the player wins or loses then the game resets
+//whenever the player wins the random number resets
+
+//whenever the player loses the random number resets
 
 //link this to the portfolio of the first assignment*******
