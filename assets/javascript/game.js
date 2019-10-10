@@ -7,48 +7,39 @@ $(document).ready(function(){
         console.log(number + " random number");
         return number;  
     }
-    randomNumber(); 
     //getting the random number to show on the screen (the number the player has to match to win the game) resource: https://api.jquery.com/html/
     $("div.randominteger").text(randomNumber());
-});
 
-//four crystals get assigned random numbers/scores (between 1-12)
-$(document).ready(function() {
-//assigning value to crystals using same prinicples as above. Here we make the random number from 1-12:
+function blueValue () {
+    let numberb = Math.floor((Math.random()* 12) + 1);
+    console.log(numberb + " blue value");
+    return numberb;
+}
+blueValue();
 
-    function blueValue () {
-        let numberb = Math.floor((Math.random()* 12) + 1);
-        console.log(numberb + " blue value");
-        return numberb;
-    }
-    blueValue();
+function greenValue () {
+    let numberg = Math.floor((Math.random()* 12) + 1);
+    console.log(numberg + " green value");
+    return numberg;
+}
+greenValue();
 
-    function greenValue () {
-        let numberg = Math.floor((Math.random()* 12) + 1);
-        console.log(numberg + " green value");
-        return numberg;
-    }
-    greenValue();
+function redValue () {
+    let numberr = Math.floor((Math.random()* 12) + 1);
+    console.log(numberr + " red value");
+    return numberr;
+}
+redValue();
 
-    function redValue () {
-        let numberr = Math.floor((Math.random()* 12) + 1);
-        console.log(numberr + " red value");
-        return numberr;
-    }
-    redValue();
+function yellowValue () {
+    let numbery = Math.floor((Math.random()* 12) + 1);
+    console.log(numbery + " yellow value");
+    return numbery;
+}
+yellowValue();
 
-    function yellowValue () {
-        let numbery = Math.floor((Math.random()* 12) + 1);
-        console.log(numbery + " yellow value");
-        return numbery;
-    }
-    yellowValue();
-
-//defining value to each jewel using above functions attempting to make jewel value static for one game  
-
-    $("img.one", "img.two", "img.three", "img.four").click(function(score){
-// we need a trigger to make clicking on each jewel contribute to total score
-    });
+//need on click function for each jewel
+//need to add total score value with each jewel click
 
 });
 
