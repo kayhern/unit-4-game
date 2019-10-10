@@ -15,7 +15,7 @@ function blueValue () {
     console.log(numberb + " blue value");
     return numberb;
 }
-blueValue();
+let numberb= blueValue();
 
 function greenValue () {
     let numberg = Math.floor((Math.random()* 12) + 1);
@@ -40,7 +40,12 @@ yellowValue();
 
 //need on click function for each jewel
 //need to add total score value with each jewel click
-
+$("img.one").click(function blueValue (){
+    let numberb = Math.floor((Math.random()* 12) + 1);
+    return numberb;
+    
+});
+// $("div.totalscoreinteger").text(numberb);
 });
 
 
