@@ -9,6 +9,8 @@ let numberb = 0;
 let numberg = 0;
 let numberr = 0;
 let numbery = 0;
+let wins = 0;
+let losses = 0;
 
 //random number gets generated (between 19-120) resource: https://www.w3schools.com/jsref/jsref_random.asp 
 //article explaining it's not really random: https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131
@@ -17,7 +19,7 @@ function randomNumber () {
     let number = Math.floor((Math.random() * 101) + 19);
     console.log(number + " random number");
     return number;  
-    }
+    };
 //getting the random number to show on the screen (the number the player has to match to win the game) resource: https://api.jquery.com/html/
 $("div.randominteger").text(randomNumber());
 
@@ -49,11 +51,11 @@ function yellowValue () {
 }
 yellowValue();
 
-// reset Game function
+// reset Game function (when the player wins or loses I will call this function)
 
 function GameRestart () {
-    $(div.randominteger).text(randomNumber());
-    $(div.totalscoreinteger).text();
+    $("div.randominteger").text(randomNumber());
+    $("div.totalscoreinteger").text("0");
 }
 GameRestart();
 
