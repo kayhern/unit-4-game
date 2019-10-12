@@ -52,7 +52,7 @@ function yellowValue () {
 yellowValue();
 
 // reset Game function (when the player wins or loses I will call this function)
-//reset random number, score, and jewel values
+//reset: random number, score, and jewel values
 
 function GameRestart () {
     $("div.randominteger").text(randomNumber());
