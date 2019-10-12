@@ -71,6 +71,7 @@ function resetScore () {
 //on click function for each jewel
 //add total score value with each jewel click
 //if the user clicks on consequent crystals a number gets added to score (cumulative)
+//reset game when scores matches random number (win) or exceeds random number (loss)
 //thanks to Dan and Naima for help on developing these functions
 $(".one").click(function (){
     currentScore += numberb;
@@ -151,22 +152,3 @@ $(".four").click(function (){
 });
 
 });
-
-// $("#btn-choice").click(function(event) {
-//     userChoice = this.id;
-//     test();
-// });
-
-//jQuery to manipulate CSS
-
-//when the score goes past the random number then the user loses
-
-//when the score is a match to the number generated then the user wins
-
-//when the user wins the wins go up
-
-//when the user loses then the wins go up
-
-//whenever the player wins the random number resets
-
-//whenever the player loses the random number resets
