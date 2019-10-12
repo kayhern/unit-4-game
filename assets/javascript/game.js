@@ -61,12 +61,12 @@ function GameRestart () {
     greenValue();
     redValue();
     yellowValue();
-}
-GameRestart();
+};
 
 //on click function for each jewel
 //add total score value with each jewel click
 //if the user clicks on consequent crystals a number gets added to score (cumulative)
+//thanks to Dan and Naima for help on developing these functions
 $(".one").click(function (){
     currentScore += numberb;
     console.log('number b', numberb);
