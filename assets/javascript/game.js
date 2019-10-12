@@ -49,6 +49,14 @@ function yellowValue () {
 }
 yellowValue();
 
+// reset Game function
+
+function GameRestart () {
+    $(div.randominteger).text(randomNumber());
+    $(div.totalscoreinteger).text();
+}
+GameRestart();
+
 //on click function for each jewel
 //add total score value with each jewel click
 //if the user clicks on consequent crystals a number gets added to score (cumulative)
