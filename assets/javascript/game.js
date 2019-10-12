@@ -47,8 +47,8 @@ function yellowValue () {
 }
 yellowValue();
 
-//need on click function for each jewel
-//need to add total score value with each jewel click
+//on click function for each jewel
+//add total score value with each jewel click
 $(".one").click(function (){
     // let numberb = Math.floor((Math.random()* 12) + 1);
     currentScore += numberb;
