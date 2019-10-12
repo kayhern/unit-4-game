@@ -64,8 +64,6 @@ $(".two").click(function (){
     console.log('number g', numberg);
     console.log('current score', currentScore);
     $("div.totalscoreinteger").html(currentScore);
-    // Put return at end of functions
-    // return is what ends the function
     return numberg;
 });
 
@@ -74,8 +72,6 @@ $(".three").click(function (){
     console.log('number r', numberr);
     console.log('current score', currentScore);
     $("div.totalscoreinteger").html(currentScore);
-    // Put return at end of functions
-    // return is what ends the function
     return numberr;
 });
 
@@ -84,8 +80,6 @@ $(".four").click(function (){
     console.log('number y', numbery);
     console.log('current score', currentScore);
     $("div.totalscoreinteger").html(currentScore);
-    // Put return at end of functions
-    // return is what ends the function
     return numbery;
 });
 
