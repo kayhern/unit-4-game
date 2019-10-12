@@ -61,14 +61,36 @@ $(".one").click(function (){
 });
 
 $(".two").click(function (){
-    // let numberb = Math.floor((Math.random()* 12) + 1);
+    // let numberg = Math.floor((Math.random()* 12) + 1);
     currentScore += numberg;
-    console.log('number b', numberg);
+    console.log('number g', numberg);
     console.log('current score', currentScore);
     $("div.totalscoreinteger").html(currentScore + numberg);
     // Put return at end of functions
     // return is what ends the function
     return numberg;
+});
+
+$(".three").click(function (){
+    // let numberr = Math.floor((Math.random()* 12) + 1);
+    currentScore += numberr;
+    console.log('number r', numberr);
+    console.log('current score', currentScore);
+    $("div.totalscoreinteger").html(currentScore + numberr);
+    // Put return at end of functions
+    // return is what ends the function
+    return numberr;
+});
+
+$(".four").click(function (){
+    // let numbery = Math.floor((Math.random()* 12) + 1);
+    currentScore += numbery;
+    console.log('number y', numbery);
+    console.log('current score', currentScore);
+    $("div.totalscoreinteger").html(currentScore + numbery);
+    // Put return at end of functions
+    // return is what ends the function
+    return numbery;
 });
 
 });
