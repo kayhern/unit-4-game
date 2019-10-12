@@ -9,14 +9,14 @@ let numberb = 0;
 let numberg = 0;
 let numberr = 0;
 let numbery = 0;
-let wins = 0;
-let losses = 0;
+let wins = [];
+let losses = [];
 
 //random number gets generated (between 19-120) resource: https://www.w3schools.com/jsref/jsref_random.asp 
 //article explaining it's not really random: https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131
 function randomNumber () {
 // Remove all `let` keywords from functions
-    let number = Math.floor((Math.random() * 101) + 19);
+    number = Math.floor((Math.random() * 101) + 19);
     console.log(number + " random number");
     return number;  
     };
@@ -56,11 +56,16 @@ yellowValue();
 
 function GameRestart () {
     $("div.randominteger").text(randomNumber());
-    $("div.totalscoreinteger").text("0");
     blueValue();
     greenValue();
     redValue();
     yellowValue();
+};
+
+//source: https://stackoverflow.com/questions/7381712/how-to-reset-my-score-javascript
+function resetScore () {
+    currentScore = 0;
+    $("div.totalscoreinteger").text("0");
 };
 
 //on click function for each jewel
@@ -74,7 +79,18 @@ $(".one").click(function (){
     $("div.totalscoreinteger").html(currentScore);
 // Put return at end of functions
 // return is what ends the function
-    return numberb;
+    if (currentScore === number) {
+        wins++;
+        $("span.winsinteger").html(+wins);
+        GameRestart();
+        resetScore();
+    }
+    else if (currentScore > number) {
+        losses++;
+        $("span.lossesinteger").html(+losses);
+        GameRestart();
+        resetScore();
+    };
 });
 
 $(".two").click(function (){
@@ -82,7 +98,18 @@ $(".two").click(function (){
     console.log('number g', numberg);
     console.log('current score', currentScore);
     $("div.totalscoreinteger").html(currentScore);
-    return numberg;
+    if (currentScore === number) {
+        wins++;
+        $("span.winsinteger").html(+wins);
+        GameRestart();
+        resetScore();
+    }
+    else if (currentScore > number) {
+        losses++;
+        $("span.lossesinteger").html(+losses);
+        GameRestart();
+        resetScore();
+    };
 });
 
 $(".three").click(function (){
@@ -90,7 +117,18 @@ $(".three").click(function (){
     console.log('number r', numberr);
     console.log('current score', currentScore);
     $("div.totalscoreinteger").html(currentScore);
-    return numberr;
+    if (currentScore === number) {
+        wins++;
+        $("span.winsinteger").html(+wins);
+        GameRestart();
+        resetScore();
+    }
+    else if (currentScore > number) {
+        losses++;
+        $("span.lossesinteger").html(+losses);
+        GameRestart();
+        resetScore();
+    };
 });
 
 $(".four").click(function (){
@@ -98,7 +136,18 @@ $(".four").click(function (){
     console.log('number y', numbery);
     console.log('current score', currentScore);
     $("div.totalscoreinteger").html(currentScore);
-    return numbery;
+    if (currentScore === number) {
+        wins++;
+        $("span.winsinteger").html(+wins);
+        GameRestart();
+        resetScore();
+    }
+    else if (currentScore > number) {
+        losses++;
+        $("span.lossesinteger").html(+losses);
+        GameRestart();
+        resetScore();
+    };
 });
 
 });
