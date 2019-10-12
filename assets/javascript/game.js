@@ -1,22 +1,24 @@
+//baseline for any jQuery function according to this video https://www.youtube.com/watch?v=hMxGhHNOkCU: $(document).ready(function()) {
+
+//} ;
 //function to generate 'random' number:
 $(document).ready(function(){
+// Declare variables and set initial value here
 let currentScore = 0;
 let numberb = 0;
 let numberg = 0;
 let numberr = 0;
 let numbery = 0;
 
-// Declare variables and set initial value here
-
 //random number gets generated (between 19-120) resource: https://www.w3schools.com/jsref/jsref_random.asp 
 //article explaining it's not really random: https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131
 function randomNumber () {
-    // Remove all `let` keywords from functions
+// Remove all `let` keywords from functions
     let number = Math.floor((Math.random() * 101) + 19);
     console.log(number + " random number");
     return number;  
     }
-    //getting the random number to show on the screen (the number the player has to match to win the game) resource: https://api.jquery.com/html/
+//getting the random number to show on the screen (the number the player has to match to win the game) resource: https://api.jquery.com/html/
 $("div.randominteger").text(randomNumber());
 
 function blueValue () {
@@ -49,13 +51,14 @@ yellowValue();
 
 //on click function for each jewel
 //add total score value with each jewel click
+//if the user clicks on consequent crystals a number gets added to score (cumulative)
 $(".one").click(function (){
     currentScore += numberb;
     console.log('number b', numberb);
     console.log('current score', currentScore);
     $("div.totalscoreinteger").html(currentScore);
-    // Put return at end of functions
-    // return is what ends the function
+// Put return at end of functions
+// return is what ends the function
     return numberb;
 });
 
@@ -90,12 +93,6 @@ $(".four").click(function (){
 //     test();
 // });
 
-//if the user clicks on consequent crystals a number gets added to score (cumulative)
-
-//baseline for any jQuery function according to this video https://www.youtube.com/watch?v=hMxGhHNOkCU: $(document).ready(function()) {
-
-//} ;
-
 //jQuery to manipulate CSS
 
 //when the score goes past the random number then the user loses
@@ -109,5 +106,3 @@ $(".four").click(function (){
 //whenever the player wins the random number resets
 
 //whenever the player loses the random number resets
-
-//link this to the portfolio of the first assignment*******
