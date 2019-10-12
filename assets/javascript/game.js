@@ -50,44 +50,40 @@ yellowValue();
 //on click function for each jewel
 //add total score value with each jewel click
 $(".one").click(function (){
-    // let numberb = Math.floor((Math.random()* 12) + 1);
     currentScore += numberb;
     console.log('number b', numberb);
     console.log('current score', currentScore);
-    $("div.totalscoreinteger").html(currentScore + numberb);
+    $("div.totalscoreinteger").html(currentScore);
     // Put return at end of functions
     // return is what ends the function
     return numberb;
 });
 
 $(".two").click(function (){
-    // let numberg = Math.floor((Math.random()* 12) + 1);
     currentScore += numberg;
     console.log('number g', numberg);
     console.log('current score', currentScore);
-    $("div.totalscoreinteger").html(currentScore + numberg);
+    $("div.totalscoreinteger").html(currentScore);
     // Put return at end of functions
     // return is what ends the function
     return numberg;
 });
 
 $(".three").click(function (){
-    // let numberr = Math.floor((Math.random()* 12) + 1);
     currentScore += numberr;
     console.log('number r', numberr);
     console.log('current score', currentScore);
-    $("div.totalscoreinteger").html(currentScore + numberr);
+    $("div.totalscoreinteger").html(currentScore);
     // Put return at end of functions
     // return is what ends the function
     return numberr;
 });
 
 $(".four").click(function (){
-    // let numbery = Math.floor((Math.random()* 12) + 1);
     currentScore += numbery;
     console.log('number y', numbery);
     console.log('current score', currentScore);
-    $("div.totalscoreinteger").html(currentScore + numbery);
+    $("div.totalscoreinteger").html(currentScore);
     // Put return at end of functions
     // return is what ends the function
     return numbery;
